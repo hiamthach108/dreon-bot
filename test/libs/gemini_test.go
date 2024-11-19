@@ -8,7 +8,7 @@ import (
 )
 
 func TestGeminiGenerateContent(t *testing.T) {
-	gemini, err := gemini.NewGenAIGemini("AIzaSyDOM0x7DC9ArmETWUt-IkWJQn3nPpihlSY")
+	gemini, err := gemini.NewGenAIGemini("API_KEY")
 	assert.Nil(t, err)
 
 	resp, err := gemini.GenerateContent("Hello")
