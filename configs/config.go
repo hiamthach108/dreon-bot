@@ -21,6 +21,7 @@ type AppConfig struct {
 	}
 
 	Telegram struct {
+		BotName  string `env:"TELE_BOT_NAME"`
 		BotToken string `env:"TELE_BOT_TOKEN"`
 	}
 }
