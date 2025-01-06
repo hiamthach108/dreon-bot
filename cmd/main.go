@@ -1,7 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"dreonbot/pkg/adapters"
+	server "dreonbot/pkg/infrastructures"
+)
+
+func init() {
+	adapters.IocConfigs()
+	adapters.IoCLogger()
+	adapters.TelebotStart()
+}
 
 func main() {
-	fmt.Println("Hi am Thach")
+	server.StartEchoServer()
 }
